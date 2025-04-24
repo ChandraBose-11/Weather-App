@@ -24,18 +24,17 @@ const Weather = () => {
   };
 
   return (
-    <div className='bg-blue-950'>
-      <h1 className="text-4xl md:text-5xl font-bold text-center m-1 text-[#10a5db]">
+    <div className="bg-[#226ba3]">
+      <h1 className="text-4xl md:text-5xl font-bold text-center pt-3 text-[#913639]">
         Weather App
       </h1>
-
       <div className="w-[100%] h-[100vh] flex items-center justify-center  ">
-        <div className="weather-container w-[290px] h-[400px] bg-[#10a5db] rounded-[30px] ">
+      <div className="weather-container w-[290px] h-[400px] bg-[#627e75] rounded-[30px] ">
           <div className="search-bar flex items-center justify-around my-[20px] ">
             <input
               type="text"
               placeholder="Search city"
-              className="input rounded-[50px] input-info w-[80%] max-w-xs bg-[#fff]"
+              className="input rounded-[50px] input-info w-[80%] max-w-xs bg-white"
               onChange={(e) => setCity(e.target.value)}
             />
             <button onClick={fetchWeather}>
@@ -44,7 +43,7 @@ const Weather = () => {
           </div>
           {!weather && (
             <div className="flex justify-center">
-              <h1 className="text-center text-black font-bold text-[35px]">
+              <h1 className="text-center text-[#e9c429] font-bold text-[35px]">
                 Enter the city <br /> name to check <br /> the weather
               </h1>
             </div>
